@@ -1,0 +1,322 @@
+Screen {
+    layout: vertical;
+}
+
+#view-switcher {
+    width: 1fr;
+    height: 1fr;
+}
+
+.screen-view {
+    padding: 1 2;
+    height: 1fr;
+}
+
+.section-title {
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#overview-logo {
+    color: #f5f7ff;
+    text-style: bold;
+    height: 6;
+    margin-bottom: 1;
+}
+
+#overview-summary {
+    height: 8;
+    margin-bottom: 1;
+}
+
+.summary-card {
+    width: 1fr;
+    height: 7;
+    border: round $accent;
+    padding: 1 2;
+    margin-right: 1;
+    background: $boost;
+}
+
+.summary-card:last-child {
+    margin-right: 0;
+}
+
+.summary-card-title {
+    color: $text-muted;
+}
+
+.summary-card-value {
+    text-style: bold;
+    margin-top: 1;
+}
+
+#overview-empty,
+#ledger-empty,
+.placeholder-copy {
+    margin-top: 1;
+    color: $text-muted;
+}
+
+#expenses-status {
+    width: 100%;
+    max-width: 100%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+#expenses-filter-copy {
+    margin-top: 0;
+    margin-bottom: 1;
+}
+
+#expenses-filters {
+    height: auto;
+    margin-bottom: 1;
+}
+
+.expenses-filter-title {
+    color: $text-muted;
+    margin-bottom: 1;
+}
+
+.expenses-filter-row {
+    height: auto;
+    margin-bottom: 1;
+}
+
+.expenses-filter-button {
+    margin-right: 1;
+    margin-bottom: 1;
+}
+
+.expenses-filter-row Button:last-child {
+    margin-right: 0;
+}
+
+#expenses-empty {
+    max-width: 84;
+}
+
+#expenses-investments-empty {
+    max-width: 84;
+}
+
+#ledger-search {
+    margin-bottom: 1;
+}
+
+#ledger-toolbar {
+    height: auto;
+    margin-bottom: 1;
+}
+
+#ledger-toolbar Button {
+    margin-left: 1;
+}
+
+#ledger-status {
+    margin-top: 0;
+    margin-bottom: 1;
+    color: $text-muted;
+}
+
+#categories-status {
+    max-width: 96;
+    margin-bottom: 1;
+}
+
+#categories-toolbar {
+    height: auto;
+    margin-bottom: 1;
+}
+
+#categories-name {
+    width: 1fr;
+    margin-right: 1;
+}
+
+#categories-toolbar Button {
+    margin-left: 1;
+}
+
+#categories-toolbar Button:first-child {
+    margin-left: 0;
+}
+
+#categories-table,
+#ledger-table {
+    height: 1fr;
+}
+
+#overview-recent {
+    height: auto;
+}
+
+.chart-card {
+    height: 14;
+    border: round $panel;
+    background: $boost;
+    margin-bottom: 1;
+}
+
+#overview-chart-empty,
+#expenses-empty,
+#categories-empty {
+    margin-top: 0;
+}
+
+.placeholder-box {
+    border: round $panel;
+    padding: 1 2;
+    height: auto;
+    max-width: 72;
+}
+
+#edit-transaction-modal {
+    width: 72;
+    max-width: 90%;
+    height: auto;
+    padding: 1 2;
+    border: round $accent;
+    background: $surface;
+}
+
+#edit-narration {
+    margin-bottom: 1;
+    color: $text-muted;
+}
+
+#edit-merchant,
+#edit-category-select,
+#edit-new-category {
+    margin-top: 1;
+}
+
+#edit-error {
+    min-height: 1;
+    margin-top: 1;
+    color: $error;
+}
+
+#edit-actions {
+    margin-top: 1;
+    align-horizontal: right;
+}
+
+#edit-actions Button {
+    margin-left: 1;
+}
+
+#categorization-review-modal {
+    width: 72;
+    max-width: 90%;
+    height: auto;
+    padding: 1 2;
+    border: round $accent;
+    background: $surface;
+}
+
+#categorization-review-title {
+    text-style: bold;
+}
+
+#categorization-review-narration,
+#categorization-review-suggestion,
+#categorization-review-reason {
+    margin-top: 1;
+    color: $text-muted;
+}
+
+#categorization-review-candidates,
+#categorization-review-select {
+    margin-top: 1;
+}
+
+#categorization-review-error {
+    min-height: 1;
+    margin-top: 1;
+    color: $error;
+}
+
+#categorization-review-actions {
+    margin-top: 1;
+    align-horizontal: right;
+}
+
+#categorization-review-actions Button {
+    margin-left: 1;
+}
+
+#ask-ai-status {
+    max-width: 100%;
+    margin-bottom: 1;
+}
+
+#ask-ai-messages {
+    height: auto;
+    min-height: 5;
+    border: round $panel;
+    background: $boost;
+    padding: 1;
+    margin-bottom: 1;
+}
+
+#ask-ai-empty {
+    margin-top: 0;
+    margin-bottom: 1;
+}
+
+#ask-ai-input {
+    height: 7;
+}
+
+#ask-ai-actions {
+    height: auto;
+    margin-top: 1;
+    align-horizontal: right;
+}
+
+.ask-ai-row {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1;
+}
+
+.ask-ai-user-row {
+    align-horizontal: right;
+}
+
+.ask-ai-assistant-row {
+    align-horizontal: left;
+}
+
+.ask-ai-message {
+    width: 80%;
+    height: auto;
+    padding: 1 2;
+    border: round $accent;
+    background: $surface;
+}
+
+.ask-ai-error {
+    border: round $error;
+}
+
+#command-palette-modal {
+    width: 84;
+    max-width: 96%;
+    height: auto;
+    padding: 1 2;
+    border: round $accent;
+    background: $surface;
+}
+
+#command-palette-input {
+    margin-bottom: 1;
+}
+
+#command-palette-options {
+    height: 12;
+    margin-bottom: 1;
+}

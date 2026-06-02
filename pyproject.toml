@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paisa"
+version = "0.1.0"
+description = "Local-first personal finance TUI for HDFC and ICICI statements"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiosqlite>=0.20",
+    "cryptography>=43",
+    "python-dotenv>=1.0",
+    "httpx>=0.27",
+    "langgraph>=0.6",
+    "keyring>=25",
+    "pdfplumber>=0.11",
+    "pydantic>=2",
+    "textual>=0.86",
+    "textual-plotext>=1",
+]
+
+[project.optional-dependencies]
+ai = [
+    "sentence-transformers>=3",
+]
+dev = [
+    "mypy>=1.10",
+    "pytest>=8",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+paisa = "paisa.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+packages = ["paisa"]
+ignore_missing_imports = true
