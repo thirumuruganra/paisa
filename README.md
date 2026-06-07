@@ -1,5 +1,7 @@
 # Paisa
 
+<div align="center">
+
 ```text
  888888ba   .d888888  dP .d88888b   .d888888
  88    `8b d8'    88  88 88.    "' d8'    88
@@ -8,6 +10,8 @@ a88aaaa8P' 88aaaaa88a 88 `Y88888b. 88aaaaa88a
  88        88     88  88 d8'   .8P 88     88
  dP        88     88  dP  Y88888P  88     88
 ```
+
+</div>
 
 Paisa is a local-first personal finance app for importing HDFC and ICICI PDF bank statements.
 
