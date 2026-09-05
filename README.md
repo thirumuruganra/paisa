@@ -127,7 +127,3 @@ Ollama must be reachable at `OLLAMA_BASE_URL` or default `http://127.0.0.1:11434
 - Statement source folder: `./statements`
 - Default database: platform data directory under `paisa/paisa.db`
 - PDF passwords: secure keyring plus local encryption key when secure backend exists
-
-## Full Architecture Notes
-
-See [ARCHITECTURE.md](/home/thiru/Desktop/paisa/ARCHITECTURE.md) for full app workflow, architecture notes, and methodology diagram.
